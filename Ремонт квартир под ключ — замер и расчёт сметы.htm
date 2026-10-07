@@ -1,0 +1,1006 @@
+<!DOCTYPE html>
+<html lang="ru"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="stylesheet" href="%D0%A0%D0%B5%D0%BC%D0%BE%D0%BD%D1%82%20%D0%BA%D0%B2%D0%B0%D1%80%D1%82%D0%B8%D1%80%20%D0%BF%D0%BE%D0%B4%20%D0%BA%D0%BB%D1%8E%D1%87%20%E2%80%94%20%D0%B7%D0%B0%D0%BC%D0%B5%D1%80%20%D0%B8%20%D1%80%D0%B0%D1%81%D1%87%D1%91%D1%82%20%D1%81%D0%BC%D0%B5%D1%82%D1%8B_files/index.DftcyDF3_UyGu.css" data-rsc-css-href="/_next/static/css/index.DftcyDF3.css" data-precedence="vite-rsc/importer-resources"><link rel="modulepreload" fetchpriority="low" href="%D0%A0%D0%B5%D0%BC%D0%BE%D0%BD%D1%82%20%D0%BA%D0%B2%D0%B0%D1%80%D1%82%D0%B8%D1%80%20%D0%BF%D0%BE%D0%B4%20%D0%BA%D0%BB%D1%8E%D1%87%20%E2%80%94%20%D0%B7%D0%B0%D0%BC%D0%B5%D1%80%20%D0%B8%20%D1%80%D0%B0%D1%81%D1%87%D1%91%D1%82%20%D1%81%D0%BC%D0%B5%D1%82%D1%8B_files/index-C1ZBt8Jk_UyGu.js"><script src="%D0%A0%D0%B5%D0%BC%D0%BE%D0%BD%D1%82%20%D0%BA%D0%B2%D0%B0%D1%80%D1%82%D0%B8%D1%80%20%D0%BF%D0%BE%D0%B4%20%D0%BA%D0%BB%D1%8E%D1%87%20%E2%80%94%20%D0%B7%D0%B0%D0%BC%D0%B5%D1%80%20%D0%B8%20%D1%80%D0%B0%D1%81%D1%87%D1%91%D1%82%20%D1%81%D0%BC%D0%B5%D1%82%D1%8B_files/rolldown-runtime-C60lm6uB_UyGu.js" type="module" async=""></script><script src="%D0%A0%D0%B5%D0%BC%D0%BE%D0%BD%D1%82%20%D0%BA%D0%B2%D0%B0%D1%80%D1%82%D0%B8%D1%80%20%D0%BF%D0%BE%D0%B4%20%D0%BA%D0%BB%D1%8E%D1%87%20%E2%80%94%20%D0%B7%D0%B0%D0%BC%D0%B5%D1%80%20%D0%B8%20%D1%80%D0%B0%D1%81%D1%87%D1%91%D1%82%20%D1%81%D0%BC%D0%B5%D1%82%D1%8B_files/framework-D_rUT4EX_UyGu.js" type="module" async=""></script><link rel="modulepreload" href="https://remont-apartments.fit-tern-2269.chatgpt.site/_next/static/chunks/layout-segment-context-Xzk635HU.js" crossorigin=""><link rel="modulepreload" href="https://remont-apartments.fit-tern-2269.chatgpt.site/_next/static/chunks/page-Ch6k1lSA.js" crossorigin=""><title>Ремонт квартир под ключ — замер и расчёт сметы</title><meta name="description" content="Ремонт новостроек и вторичного жилья: от черновых работ до чистовой отделки. Оставьте заявку на замер и расчёт сметы для вашей квартиры."><link rel="shortcut icon" href="https://remont-apartments.fit-tern-2269.chatgpt.site/favicon.svg"><link rel="icon" href="https://remont-apartments.fit-tern-2269.chatgpt.site/favicon.svg"><script>Object.assign(((self[Symbol.for("vinext.navigationRuntime")]??={bootstrap:{routeManifest:null},functions:{}}).bootstrap.rsc??={rsc:[]}),{params:{},nav:{"pathname":"/","searchParams":[]}})</script><link rel="modulepreload" href="%D0%A0%D0%B5%D0%BC%D0%BE%D0%BD%D1%82%20%D0%BA%D0%B2%D0%B0%D1%80%D1%82%D0%B8%D1%80%20%D0%BF%D0%BE%D0%B4%20%D0%BA%D0%BB%D1%8E%D1%87%20%E2%80%94%20%D0%B7%D0%B0%D0%BC%D0%B5%D1%80%20%D0%B8%20%D1%80%D0%B0%D1%81%D1%87%D1%91%D1%82%20%D1%81%D0%BC%D0%B5%D1%82%D1%8B_files/index-C1ZBt8Jk_UyGu.js">
+<script type="text/javascript">
+
+//////////////////////////////////////////////////////////
+// kkmserver
+//////////////////////////////////////////////////////////
+
+if (!window.KkmServer) {
+
+    KkmServer = {
+
+        Command: "",
+        NumDevice: 0,
+        IdCommand: undefined,
+
+        DefaultSettings: {
+            funCallBack: undefined,
+            Timeout: 30,
+            CashierName: "",
+            CashierVATIN: "",
+            SenderEmail: "",
+            CheckProps: [],
+            KeySubLicensing: ""
+        },
+
+        _QueryResponses: new Map(),
+        _ListBarCodeEvent: new Set(),
+
+        // Выполняет команду на KkmServer
+        Execute: function (funCallBack = undefined, Data) {
+
+            if (Data == undefined) {
+                Data = KkmServer.extend({}, this, true, true);
+            } else {
+                Data = KkmServer.extend({}, Data, true, true);
+            };
+
+            if (funCallBack == undefined) {
+                funCallBack = this.DefaultSettings.funCallBack;
+            };
+            if (Data.IdCommand == undefined) {
+                Data.IdCommand = this.NewGuid();
+            };
+            if (Data.Timeout == undefined) {
+                Data.Timeout = this.DefaultSettings.Timeout;
+            };
+            if (Data.KeySubLicensing == undefined && this.DefaultSettings.KeySubLicensing != "") {
+                Data.KeySubLicensing = this.DefaultSettings.KeySubLicensing;
+            };
+            if (Data.Command == "" || Data.Command == undefined) {
+                funCallBack({
+                    Command: "<Не указано>",
+                    Error: "Ошибка вызова: не заполнена команда",
+                    Status: 2,
+                    IdCommand: Data.IdCommand,
+                });
+                return this;
+            };
+            if (Data.Command == "GetRezult") {
+                KkmServer._QueryResponses.set(Data.IdCommand + "GetRezult", funCallBack);
+            } else {
+                KkmServer._QueryResponses.set(Data.IdCommand, funCallBack);
+            };
+            window.postMessage({ Data: Data, To: "Server" }, "*");
+
+            return Data;
+        },
+
+        // Получение списка устройств
+        List: function () {
+            Data = KkmServer.extend({}, KkmServer);
+
+            Data.Command = "List";
+            Data.InnKkm = "";
+            Data.Active = null;
+            Data.OnOff = null;
+            Data.OFD_Error = null;
+            Data.OFD_DateErrorDoc = '2100-01-01T00:00:00';
+            Data.FN_DateEnd = '2100-01-01T00:00:00';
+            Data.FN_MemOverflowl = null;
+            Data.FN_IsFiscal = null;
+
+            return Data;
+        },
+
+        // Возвращает данные для заполнения чека по ФФД вер. 1.1
+        GetDataCheck: function (TypeCheck = 0, NumDevice = 0, InnKkm = "", CashierName = "", CashierVATIN = "") {
+
+            Data = KkmServer.extend({}, KkmServer);
+
+            if (CashierName == "" || CashierName == undefined) {
+                CashierName = this.DefaultSettings.CashierName;
+            }
+
+            // Подготовка данных команды
+            Data.VerFFD = "1.0";
+            Data.Command = "RegisterCheck";
+            Data.NumDevice = NumDevice;
+            Data.InnKkm = InnKkm;
+            Data.KktNumber = "";
+            Data.IsFiscalCheck = true;
+            Data.TypeCheck = TypeCheck;
+            Data.NotPrint = false;
+            Data.NumberCopies = 0;
+            Data.CashierName = CashierName;
+            Data.CashierVATIN = CashierVATIN;
+            Data.ClientAddress = "";
+            Data.ClientInfo = null;
+            Data.ClientINN = null;
+            Data.UserAttribute = null;
+            Data.AdditionalAttribute = null;
+            Data.SenderEmail = "";
+            Data.TaxVariant = "";
+            Data.AdditionalProps = [];
+            Data.KPP = "";
+            Data.ClientId = "";
+            Data.KeySubLicensing = "";
+            Data.CheckStrings = [];
+            Data.Cash = 0;
+            Data.ElectronicPayment = 0;
+            Data.AdvancePayment = 0;
+            Data.Credit = 0;
+            Data.CashProvision = 0;
+
+            // Если надо одновременно автоматически провести транзакцию через эквайринг 
+            // Эквайринг будет задействован если: 1. чек фискальный, 2. оплата по "ElectronicPayment" не равна 0, 3. PayByProcessing = true
+            // null - из настроек kkmserver
+            Data.PayByProcessing = null; //В тестовом чеке автоматический эквайринг выключен
+            // Номер устройства для эквайринга - Null - из настроек на сервере, 0 - любое, число - номер конкретного устройства
+            Data.NumDeviceByProcessing = null; 
+            // Номер чека для эквайринга
+            Data.ReceiptNumber = "";
+            // Печатать Слип-чек после чека (а не в чеке) null - из настроек kkmserver
+            Data.PrintSlipAfterCheck = null;
+            // Печатать Слип-чек дополнительно для кассира (основной слип-чек уже будет печататся в составе чека) null - из настроек kkmserver
+            Data.PrintSlipForCashier = null;
+            //Если это чек возврата то возможны два поля для отмены транзакции (если не указано то по эквайрингу будет не отмена а возврат)
+            Data.RRNCode = ""; // RRNCode из операции эквайринга. Только для отмены оплаты! Для Оплаты или возврата оплаты не заполнять!
+            Data.AuthorizationCode = ""; // AuthorizationCode из операции эквайринга. Только для отмены оплаты! Для Оплаты или возврата оплаты не заполнять!
+
+            // Устаревшее
+            Data.CheckProps = [];
+            Data.CashLessType1 = 0;
+            Data.CashLessType2 = 0;
+            Data.CashLessType3 = 0;
+            Data.CancelOpenedCheck = true;
+
+            // Добавляет данные агента в чек признак агента
+            Data.AddDataAgent = function (
+                AgentSign, //признак агента
+                PayingAgentOperation = "",
+                PayingAgentPhone = "",
+                ReceivePaymentsOperatorPhone = "",
+                MoneyTransferOperatorPhone = "",
+                MoneyTransferOperatorName = "",
+                MoneyTransferOperatorAddress = "",
+                MoneyTransferOperatorVATIN = "",
+                PurveyorPhone = ""
+            ) {
+                Data.AgentSign = AgentSign;
+
+                if (PayingAgentOperation != ""
+                    || PayingAgentPhone != ""
+                    || ReceivePaymentsOperatorPhone != ""
+                    || MoneyTransferOperatorPhone != ""
+                    || MoneyTransferOperatorName != ""
+                    || MoneyTransferOperatorAddress != ""
+                    || MoneyTransferOperatorVATIN != "") {
+                    Data.AgentData = {
+                        PayingAgentOperation: PayingAgentOperation,
+                        PayingAgentPhone: PayingAgentPhone,
+                        ReceivePaymentsOperatorPhone: ReceivePaymentsOperatorPhone,
+                        MoneyTransferOperatorPhone: MoneyTransferOperatorPhone,
+                        MoneyTransferOperatorName: MoneyTransferOperatorName,
+                        MoneyTransferOperatorAddress: MoneyTransferOperatorAddress,
+                        MoneyTransferOperatorVATIN: MoneyTransferOperatorVATIN
+                    };
+                };
+
+                if (PurveyorPhone != "") {
+                    Data.PurveyorData = {
+                        PurveyorPhone: PurveyorPhone
+                    };
+                };
+
+                return Data;
+            };
+
+            // Добавляет фискальную строку и возвращает ее для заполнения
+            Data.AddRegisterString = function (Name, Quantity, Price, Amount, Tax, Department, EAN13, SignMethodCalculation, SignCalculationObject, GoodCodeData = null, MeasurementUnit = "", CountryOfOrigin = null, CustomsDeclaration = null, ExciseAmount = null, AdditionalAttribute = null) {
+                var NewData = {
+                    Register: {
+                        Name: Name,
+                        Quantity: Quantity,
+                        Price: Price,
+                        Amount: Amount,
+                        Department: Department,
+                        Tax: Tax,
+                        EAN13: EAN13,
+                        EGAIS: null,
+                        SignMethodCalculation: SignMethodCalculation,
+                        SignCalculationObject: SignCalculationObject,
+                        MeasurementUnit: MeasurementUnit,
+                        GoodCodeData: GoodCodeData,
+                        AgentSign: null,
+                        AgentData: null,
+                        PurveyorData: null,
+                        CountryOfOrigin: CountryOfOrigin,
+                        CustomsDeclaration: CustomsDeclaration,
+                        ExciseAmount: ExciseAmount,
+                        AdditionalAttribute: AdditionalAttribute
+                    }
+                };
+
+                if (GoodCodeData == "") {
+                    NewData.Register.GoodCodeData = null;
+                };
+                Data.CheckStrings.push(NewData);
+                return NewData.Register;
+            };
+
+            // Добавляет в последнею строку Код товарной номенклатуры
+            Data.AddGoodCodeData = function (StampType, GTIN, SerialNumber) {
+                CheckString = Data.CheckStrings[Data.CheckStrings.length - 1];
+                if (CheckString.Register != undefined) {
+                    CheckString.Register.GoodCodeData = {
+                        StampType: StampType,
+                        GTIN: GTIN,
+                        SerialNumber: SerialNumber
+                    };
+                };
+                return Data.Register;
+            };
+
+            // Добавляет в последнею строку признак агента
+            Data.AddAgentSign = function (AgentSign) {
+                CheckString = Data.CheckStrings[Data.CheckStrings.length - 1];
+                if (CheckString.Register != undefined) {
+                    CheckString.Register.AgentSign = AgentSign;
+                };
+                return CheckString.Register;
+            };
+
+            // Добавляет в последнею строку данные агента
+            Data.AddAgentData = function (PayingAgentOperation = "", PayingAgentPhone = "", ReceivePaymentsOperatorPhone = "", MoneyTransferOperatorPhone = "", MoneyTransferOperatorName = "", MoneyTransferOperatorAddress = "", MoneyTransferOperatorVATIN = "") {
+                CheckString = Data.CheckStrings[Data.CheckStrings.length - 1];
+                if (CheckString.Register != undefined) {
+                    CheckString.Register.AgentData = {
+                        PayingAgentOperation: PayingAgentOperation,
+                        PayingAgentPhone: PayingAgentPhone,
+                        ReceivePaymentsOperatorPhone: ReceivePaymentsOperatorPhone,
+                        MoneyTransferOperatorPhone: MoneyTransferOperatorPhone,
+                        MoneyTransferOperatorName: MoneyTransferOperatorName,
+                        MoneyTransferOperatorAddress: MoneyTransferOperatorAddress,
+                        MoneyTransferOperatorVATIN: MoneyTransferOperatorVATIN
+                    };
+                };
+                return CheckString.Register;
+            };
+
+            // Добавляет в последнею строку данные поставщика
+            Data.AddPurveyorData = function (PurveyorPhone, PurveyorName, PurveyorVATIN) {
+                CheckString = Data.CheckStrings[Data.CheckStrings.length - 1];
+                if (CheckString.Register != undefined) {
+                    CheckString.Register.PurveyorData = {
+                        PurveyorPhone: PurveyorPhone,
+                        PurveyorName: PurveyorName,
+                        PurveyorVATIN: PurveyorVATIN
+                    };
+                };
+                return Data.Register;
+            };
+
+            // Добавляет простую строку и возвращает ее для заполнения
+            Data.AddTextString = function (Text, Font, Intensity) {
+
+                var NewData = {
+                    PrintText: {
+                        Text: Text,
+                        Font: Font,
+                        Intensity: Intensity,
+                    }
+                };
+
+                Data.CheckStrings.push(NewData);
+                return NewData.PrintText;
+
+            };
+
+            // Добавляет данные для печати ШК и возвращает ее для заполнения
+            Data.AddBarcodeString = function (BarcodeType, Barcode) {
+
+                var NewData = {
+                    BarCode: {
+                        BarcodeType: BarcodeType,
+                        Barcode: Barcode,
+                    }
+                };
+
+                Data.CheckStrings.push(NewData);
+                return NewData.BarCode;
+
+            };
+
+            // Добавляет данные для печати картинки и возвращает ее для заполнения
+            Data.AddImageString = function (Image) {
+
+                var NewData = {
+                    PrintImage: {
+                        Image: Image,
+                    },
+                };
+
+                Data.CheckStrings.push(NewData);
+                return NewData.PrintImage;
+
+            };
+
+            // Добавляет данные по дополнительным тегам
+            Data.AddAdditionalProps = function (Print, PrintInHeader, NameProp, Prop) {
+
+                Data.UserAttribute = {
+                    // Наименование дополнительного реквизита пользователя тег ОД 1085
+                    Name: "Поле-тест",
+                    // Значение дополнительного реквизита пользователя тег ОФД 1086
+                    Value: "Тестовое значение"
+                };
+
+                return Data;
+
+            };
+
+            // Добавляет в последнею строку признак агента
+            Data.AddCorrectionDataCheck = function (CorrectionBaseName = "", CorrectionBaseDate = '2001-01-01T00:00:00', CorrectionBaseNumber = "", Ammount = 0, SumTaxNone = 0, SumTax20 = 0, SumTax10 = 0, SumTax0 = 0, SumTax120 = 0, SumTax110 = 0) {
+                Data.CorrectionBaseName = CorrectionBaseName;
+                Data.CorrectionBaseDate = CorrectionBaseDate;
+                Data.CorrectionBaseNumber = CorrectionBaseNumber;
+                Data.Ammount = Ammount;
+                Data.SumTaxNone = SumTaxNone;
+                Data.SumTax20 = SumTax20;
+                Data.SumTax10 = SumTax10;
+                Data.SumTax0 = SumTax0;
+                Data.SumTax120 = SumTax120;
+                Data.SumTax110 = SumTax110;
+                return Data;
+            };
+
+            for (var i = 0; i < this.DefaultSettings.CheckProps.length; i++) {
+                var Prop = this.DefaultSettings.CheckProps[i];
+                Data.AddCheckProps(Prop.Print, Prop.PrintInHeader, Prop.Teg, Prop.Prop);
+            };
+
+            return Data;
+        },
+
+        // Возвращает данные для заполнения чека по ФФД вер. 1.0
+        GetDataCheck_1_0: function (TypeCheck = 0, NumDevice = 0, InnKkm = "", CashierName = "") {
+
+            return KkmServer.GetDataCheck(TypeCheck, NumDevice, InnKkm, CashierName);
+
+        },
+
+        OpenShift: function (NumDevice = 0, CashierName = "", CashierVATIN = "") {
+
+            Data = KkmServer.extend({}, KkmServer);
+
+            Data.Command = "OpenShift";
+            Data.NumDevice = NumDevice;
+            Data.CashierName = CashierName;
+            Data.CashierVATIN = CashierVATIN;
+
+            return Data;
+        },
+
+        CloseShift: function (NumDevice = 0, CashierName = "", CashierVATIN = "") {
+
+            Data = KkmServer.extend({}, KkmServer);
+            Data.Command = "CloseShift";
+            Data.NumDevice = NumDevice;
+            Data.CashierName = CashierName;
+            Data.CashierVATIN = CashierVATIN;
+
+            return Data;
+        },
+
+        ZReport: function (NumDevice = 0, CashierName = "", CashierVATIN = "") {
+
+            Data = KkmServer.extend({}, KkmServer);
+            Data.Command = "CloseShift";
+            Data.NumDevice = NumDevice;
+            Data.CashierName = CashierName;
+            Data.CashierVATIN = CashierVATIN;
+
+            return Data;
+        },
+
+        XReport: function (NumDevice = 0) {
+
+            Data = KkmServer.extend({}, KkmServer);
+            Data.Command = "XReport";
+            Data.NumDevice = NumDevice;
+            return Data;
+        },
+
+        OfdReport: function (NumDevice = 0) {
+
+            Data = KkmServer.extend({}, KkmServer);
+            Data.Command = "OfdReport";
+            Data.NumDevice = NumDevice;
+            return Data;
+        },
+
+        OpenCashDrawer: function (NumDevice = 0) {
+
+            Data = KkmServer.extend({}, KkmServer);
+            Data.Command = "OpenCashDrawer";
+            Data.NumDevice = NumDevice;
+
+            return Data;
+        },
+
+        DepositingCash: function (NumDevice = 0, Amount = 0, CashierName = "", CashierVATIN = "") {
+
+            Data = KkmServer.extend({}, KkmServer);
+            Data.Command = "DepositingCash";
+            Data.NumDevice = NumDevice;
+            Data.Amount = Amount;
+            Data.CashierName = CashierName;
+            Data.CashierVATIN = CashierVATIN;
+
+            return Data;
+        },
+
+        PaymentCash: function (NumDevice = 0, Amount = 0, CashierName = "", CashierVATIN = "") {
+
+            Data = KkmServer.extend({}, KkmServer);
+            Data.Command = "PaymentCash";
+            Data.NumDevice = NumDevice;
+            Data.Amount = Amount;
+            Data.CashierName = CashierName;
+            Data.CashierVATIN = CashierVATIN;
+
+            return Data;
+        },
+
+        GetDataForCheck: function (NumDevice = 0, FiscalNumber = 0, NumberCopies = 0) {
+
+            Data = KkmServer.extend({}, KkmServer);
+            Data.Command = "GetDataCheck";
+            Data.NumDevice = NumDevice;
+            Data.FiscalNumber = FiscalNumber;
+            Data.NumberCopies = NumberCopies;
+            return Data;
+        },
+
+        GetDataKKT: function (NumDevice = 0) {
+
+            Data = KkmServer.extend({}, KkmServer);
+            Data.Command = "GetDataKKT";
+            Data.NumDevice = NumDevice;
+
+            return Data;
+        },
+
+        GetRezult: function (IdCommand) {
+
+            Data = KkmServer.extend({}, KkmServer);
+            Data.Command = "GetRezult";
+            Data.IdCommand = IdCommand;
+
+            return Data;
+        },
+
+        // Добавление дополнительных свойст чека по умолчанию
+        AddDefaultCheckProps: function (Print, PrintInHeader, Teg, Prop) {
+
+            var Data = {
+                Print: Print,
+                PrintInHeader: PrintInHeader,
+                Teg: Teg,
+                Prop: Prop
+            };
+
+            this.DefaultSettings.CheckProps.push(Data);
+            return Data;
+
+        },
+
+        // Добаляет прослушиватель для сканера штрих-кодов
+        // Параметр: Fun(Data), где Data - объект: {BarCode, NumDevice, UnitName, AlreadyProcessed}
+        //      Где: BarCode - строка, отсканированный штрих-код
+        //      Где: NumDevice - строка, номер устройства
+        //      Где: UnitName - строка, пользовательское имя устройства
+        //      Где: AlreadyProcessed - bool, возвращаемый, если установит в Истина то расширение считает что ШК обработан и не вызывает дальше прослушиватели 
+        addEventBarcodeListener: function (Fun) {
+            KkmServer._ListBarCodeEvent.add(Fun);
+        },
+
+        // ------------------------------------------------------------------------------------
+        //  КОМАНДЫ ЭКВАЙРИНГОВЫЕ ТЕРМИНАЛЫ (Только для продуктов серии UnitServer !!!!)
+
+        // Оплатить платежной картой
+        PayByPaymentCard: function (NumDevice = 0, Amount, ReceiptNumber) {
+
+            Data = KkmServer.extend({}, KkmServer);
+
+            // Команда серверу
+            Data.Command = "PayByPaymentCard";
+            // Номер устройства. Если 0 то первое не блокированное на сервере
+            Data.NumDevice = NumDevice;
+            // Номер Карты / Данные карты - если карта считывается устройством то не заполняется
+            Data.CardNumber = "";
+            // Сумма оплаты
+            Data.Amount = Amount;
+            // Номер чека
+            Data.ReceiptNumber = ReceiptNumber;
+            return Data;
+        },
+
+        // Вернуть платеж по платежной карте
+        ReturnPaymentByPaymentCard: function (NumDevice = 0, Amount, ReceiptNumber, None1 = "", None2 = "") {
+
+            Data = KkmServer.extend({}, KkmServer);
+
+            // Команда серверу
+            Data.Command = "ReturnPaymentByPaymentCard";
+            // Номер устройства. Если 0 то первое не блокированное на сервере
+            Data.NumDevice = NumDevice;
+            // Номер Карты / Данные карты - если карта считывается устройством то не заполняется
+            Data.CardNumber = "";
+            // Сумма оплаты
+            Data.Amount = Amount;
+            // Номер чека
+            Data.ReceiptNumber = ReceiptNumber;
+            return Data;
+
+        },
+
+        // Отменить платеж по платежной карте
+        CancelPaymentByPaymentCard: function (NumDevice = 0, Amount, RRNCode, AuthorizationCode, CardNumber) {
+
+            Data = KkmServer.extend({}, KkmServer);
+
+            // Команда серверу
+            Data.Command = "CancelPaymentByPaymentCard";
+            // Номер устройства. Если 0 то первое не блокированное на сервере
+            Data.NumDevice = NumDevice;
+            // Номер Карты / Данные карты - если карта считывается устройством то не заполняется
+            Data.CardNumber = CardNumber;
+            // Сумма оплаты
+            Data.Amount = Amount;
+            // Уникальный код транзакции RRN который был получен при оплате картой
+            Data.RRNCode = RRNCode;
+            // Код авторизации транзакции который был получен при оплате картой
+            Data.AuthorizationCode = AuthorizationCode;
+            return Data;
+
+        },
+
+        // Аварийная отмена операции (Метод отменяет последнюю транзакцию)
+        EmergencyReversal: function (NumDevice = 0) {
+
+            Data = KkmServer.extend({}, KkmServer);
+
+            // Команда серверу
+            Data.Command = "EmergencyReversal";
+            // Номер устройства. Если 0 то первое не блокированное на сервере
+            Data.NumDevice = NumDevice;
+            return Data;
+
+        },
+
+        // Получить итоги дня по картам (Закрытие смены на терминале)
+        Settlement: function (NumDevice = 0) {
+
+            Data = KkmServer.extend({}, KkmServer);
+
+            // Команда серверу
+            Data.Command = "Settlement";
+            // Номер устройства. Если 0 то первое не блокированное на сервере
+            Data.NumDevice = NumDevice;
+            return Data;
+
+        },
+
+        // Получить отчет по итогам дня по картам
+        TerminalReport: function (NumDevice = 0, Detailed = false) {
+
+            Data = KkmServer.extend({}, KkmServer);
+
+            // Команда серверу
+            Data.Command = "TerminalReport";
+            // Номер устройства. Если 0 то первое не блокированное на сервере
+            Data.NumDevice = NumDevice;
+            // Краткий (false) или полный (true) отчет
+            Detailed: Detailed;
+            return Data;
+
+        },
+
+        // Получить копию слип-чека
+        TransactionDetails: function (NumDevice = 0, Amount, RRNCode, AuthorizationCode, CardNumber) {
+
+            Data = KkmServer.extend({}, KkmServer);
+
+            // Команда серверу
+            Data.Command = "TransactionDetails";
+            // Номер устройства. Если 0 то первое не блокированное на сервере
+            Data.NumDevice = NumDevice;
+            // Номер Карты / Данные карты - если карта считывается устройством то не заполняется
+            Data.CardNumber = CardNumber;
+            // Сумма оплаты
+            Data.Amount = Amount;
+            // Уникальный код транзакции RRN который был получен при оплате картой
+            Data.RRNCode = RRNCode;
+            // Код авторизации транзакции который был получен при оплате картой
+            Data.AuthorizationCode = AuthorizationCode;
+            return Data;
+
+        },
+
+        // ------------------------------------------------------------------------------------
+
+        // Копирование свойств
+        extend: function (dest, src, overwrite = true, skip_ = false) {
+            for (var i in src) {
+                if (skip_ == true && (i.indexOf("_") == 0 || typeof src[i] == "function" || i == "DefaultSettings")) {
+                    continue;
+                };
+                if (overwrite == false && dest.hasOwnProperty(i) == true) {
+                    continue;
+                };
+                dest[i] = src[i];
+            };
+            return dest;
+        },
+
+        // Герерация GUID
+        NewGuid: function () {
+            function S4() {
+                return (((1 + Math.random()) * 0x10000) | 0).toString(16).substring(1);
+            };
+            return (S4() + S4() + "-" + S4() + "-" + S4() + "-" + S4() + "-" + S4() + S4() + S4());
+        },
+
+    };
+
+    // Принимаем выполнение команды от KkmServer
+    window.addEventListener("message", function (event) {
+        if (event.source != window || event.data.To != "Client") return;
+        var IdCommand = event.data.Data.IdCommand;
+        if (event.data.Data.Command == "GetRezult") {
+            IdCommand = event.data.Data.Rezult.IdCommand + "GetRezult"; 
+        };
+        if (KkmServer._QueryResponses.has(IdCommand) == true) {
+            try {
+                CallBack = KkmServer._QueryResponses.get(IdCommand);
+                CallBack(event.data.Data);
+                KkmServer._QueryResponses.delete(IdCommand);
+                //
+            } catch (err) { };
+            IsRun = false;
+        };
+    }, false);
+
+    // Слушаем сообщения о сканировании штрих-кодов
+    window.addEventListener("message",
+        function (event) {
+            if (event.source != window || event.data.name != "kkmserver.addin.EventBarcode") return;
+            var AlreadyProcessed = false;
+            for (let Fun of KkmServer._ListBarCodeEvent) {
+                try {
+                    var Par = { BarCode: event.data.BarCode, NumDevice: event.data.NumDevice, UnitName: event.data.UnitName, AlreadyProcessed: AlreadyProcessed };
+                    Fun(Par);
+                    AlreadyProcessed = Par.AlreadyProcessed;
+                    if (AlreadyProcessed == true) {
+                        break;
+                    };
+                } catch (ex) { };
+            };
+        }
+    );
+
+}
+
+///////////////////////////////////////////////////////////////////
+//-СТАРОЕ - Только для совместимости. Не используйте эти функции
+///////////////////////////////////////////////////////////////////
+
+
+// Выполняет команду на KkmServer
+function KkmServer_Execute(Data, CallBack) {
+
+    if ("IdCommand" in Data == false) {
+        Data.IdCommand = guid();
+    };
+    if (Data.IdCommand == "") {
+        Data.IdCommand = guid();
+    };
+
+    KkmServer._QueryResponses.set(Data.IdCommand, CallBack);
+
+    window.postMessage({ Data: Data, To: "Server" }, "*");
+
+}
+
+// Получение списка устройств
+function KkmServer_List() {
+
+    Data = {
+        Command: "List",
+        NumDevice: 0,
+        IdCommand: KkmServer_NewGuid(),
+        InnKkm: "",
+        Active: null,
+        OnOff: null,
+        OFD_Error: null,
+        OFD_DateErrorDoc: '2100-01-01T00:00:00',
+        FN_DateEnd: '2100-01-01T00:00:00',
+        FN_MemOverflowl: null,
+        FN_IsFiscal: null
+    };
+
+    return Data;
+}
+
+// Включение/выключение устройства
+function KkmServer_OnOffUnut(NumDevice = 0, Active = false) {
+
+    Data = {
+        Command: "OnOffUnut",
+        NumDevice: NumDevice,
+        Active: Active,
+        IdCommand: KkmServer_NewGuid(),
+    };
+
+    return Data;
+}
+
+// Герерация GUID
+function KkmServer_NewGuid() {
+
+    function S4() {
+        return (((1 + Math.random()) * 0x10000) | 0).toString(16).substring(1);
+    }
+
+    return (S4() + S4() + "-" + S4() + "-" + S4() + "-" + S4() + "-" + S4() + S4() + S4());
+}
+
+//////////////////////////////////////////////////////////
+//-ККТ----------------------------------------------------
+//////////////////////////////////////////////////////////
+
+// Возвращает данные для заполнения чека по ФФД вер. 1.0
+function KkmServer_GetDataCheck_1_0(TypeCheck = 0, NumDevice = 0, InnKkm = "", CashierName = "") {
+
+    // Подготовка данных команды
+    var Data = {
+        VerFFD: "1.0",
+        Command: "RegisterCheck",
+        NumDevice: NumDevice,
+        InnKkm: InnKkm,
+        KktNumber: "",
+        Timeout: 30,
+        IdCommand: KkmServer_NewGuid(),
+        IsFiscalCheck: true,
+        TypeCheck: TypeCheck,
+        CancelOpenedCheck: true,
+        NotPrint: false,
+        NumberCopies: 0,
+        CashierName: CashierName,
+        ClientAddress: "",
+        TaxVariant: "",
+        CheckProps: [],
+        AdditionalProps: [],
+        KPP: "",
+        ClientId: "",
+        KeySubLicensing: "",
+        CheckStrings: [],
+        Cash: 0,
+        CashLessType1: 0,
+        CashLessType2: 0,
+        CashLessType3: 0
+    };
+
+    return Data;
+}
+
+// Добаляет фискальную строку и возвращает ее для заполнения
+function KkmServer_AddRegisterString(DataCheck, Name, Quantity, Price, Amount, Tax, Department, EAN13, SignMethodCalculation, SignCalculationObject, GoodCodeData, MeasurementUnit) {
+
+    var Data;
+
+    if (DataCheck.VerFFD == "1.0") {
+        Data = {
+            Register: {
+                Name: Name,
+                Quantity: Quantity,
+                Price: Price,
+                Amount: Amount,
+                Department: Department,
+                Tax: Tax,
+                EAN13: EAN13,
+                EGAIS: null,
+            }
+        }
+    };
+
+    DataCheck.CheckStrings.push(Data);
+    return Data.Register;
+
+}
+
+// Добаляет простую строку и возвращает ее для заполнения
+function KkmServer_AddTextString(DataCheck, Text, Font, Intensity) {
+
+    var Data;
+
+    Data = {
+        PrintText: {
+            Text: Text,
+            Font: Font,
+            Intensity: Intensity,
+        }
+    };
+
+    DataCheck.CheckStrings.push(Data);
+    return Data.PrintText;
+
+}
+
+// Добаляет данные для печати ШК и возвращает ее для заполнения
+function KkmServer_AddBarcodeString(DataCheck, BarcodeType, Barcode) {
+
+    var Data;
+
+    Data = {
+        BarCode: {
+            BarcodeType: BarcodeType,
+            Barcode: Barcode,
+        }
+    };
+
+    DataCheck.CheckStrings.push(Data);
+    return Data.BarCode;
+
+}
+
+// Добаляет данные для печати картинки и возвращает ее для заполнения
+function KkmServer_AddImageString(DataCheck, Image) {
+
+    var Data;
+
+    Data = {
+        PrintImage: {
+            Image: Image,
+        },
+    };
+
+    DataCheck.CheckStrings.push(Data);
+    return Data.PrintImage;
+
+}
+
+//--------------------------------------------------------
+
+function KkmServer_OpenShift(NumDevice = 0, CashierName = "") {
+
+    Data = {
+        Command: "OpenShift",
+        NumDevice: NumDevice,
+        CashierName: CashierName,
+        IdCommand: KkmServer_NewGuid(),
+    };
+
+    return Data;
+}
+
+function KkmServer_CloseShift(NumDevice = 0, CashierName = "") {
+
+    Data = {
+        Command: "CloseShift",
+        NumDevice: NumDevice,
+        CashierName: CashierName,
+        IdCommand: KkmServer_NewGuid(),
+    };
+    return Data;
+}
+
+function KkmServer_ZReport(NumDevice = 0, CashierName = "") {
+
+    Data = {
+        Command: "CloseShift",
+        NumDevice: NumDevice,
+        CashierName: CashierName,
+        IdCommand: KkmServer_NewGuid(),
+    };
+    return Data;
+}
+
+function KkmServer_XReport(NumDevice = 0) {
+
+    Data = {
+        Command: "XReport",
+        NumDevice: NumDevice,
+        IdCommand: KkmServer_NewGuid(),
+    };
+    return Data;
+}
+
+function KkmServer_OfdReport(NumDevice = 0) {
+
+    Data = {
+        Command: "OfdReport",
+        NumDevice: NumDevice,
+        IdCommand: KkmServer_NewGuid(),
+    };
+    return Data;
+}
+
+function KkmServer_OpenCashDrawer(NumDevice = 0) {
+
+    Data = {
+        Command: "OpenCashDrawer",
+        NumDevice: NumDevice,
+        IdCommand: KkmServer_NewGuid(),
+    };
+    return Data;
+}
+
+function KkmServer_DepositingCash(NumDevice = 0, Amount = 0, CashierName = "") {
+
+    Data = {
+        Command: "DepositingCash",
+        NumDevice: NumDevice,
+        Amount: Amount,
+        CashierName: CashierName,
+        IdCommand: KkmServer_NewGuid(),
+    };
+    return Data;
+}
+
+function KkmServer_PaymentCash(NumDevice = 0, Amount = 0, CashierName = "") {
+
+    Data = {
+        Command: "PaymentCash",
+        NumDevice: NumDevice,
+        Amount: Amount,
+        CashierName: CashierName,
+        IdCommand: KkmServer_NewGuid(),
+    };
+    return Data;
+}
+
+function KkmServer_GetDataKKT(NumDevice = 0) {
+
+    Data = {
+        Command: "GetDataKKT",
+        NumDevice: NumDevice,
+        IdCommand: KkmServer_NewGuid(),
+    };
+    return Data;
+}
+
+function KkmServer_GetRezult(IdCommand) {
+
+    Data = {
+        Command: "GetRezult",
+        IdCommand: IdCommand,
+    };
+    return Data;
+}
+
+//////////////////////////////////////////////////////////
+//-ШК-----------------------------------------------------
+//////////////////////////////////////////////////////////
+
+// Добаляет прослушиватель для сканера штрих-кодов
+// Параметр: Fun(Data), где Data - объект: {BarCode, NumDevice, UnitName, AlreadyProcessed}
+//      Где: BarCode - строка, отсканированный штрих-код
+//      Где: NumDevice - строка, номер устройства
+//      Где: UnitName - строка, пользовательское имя устройства
+//      Где: AlreadyProcessed - bool, возвращаемый, если установить в Истина то расширение считает что ШК обработан и не вызывает дальше прослушиватели 
+function KkmServer_addEventBarcodeListener(Fun) {
+    KkmServer.addEventBarcodeListener(Fun);
+}
+
+
+//////////////////////////////////////////////////////////
+//-Вспомогательное----------------------------------------
+//////////////////////////////////////////////////////////
+
+// Герерация GUID
+function guid() {
+
+    function S4() {
+        return (((1 + Math.random()) * 0x10000) | 0).toString(16).substring(1);
+    }
+
+    return (S4() + S4() + "-" + S4() + "-" + S4() + "-" + S4() + "-" + S4() + S4() + S4());
+}
+
+
+</script><link rel="modulepreload" as="script" crossorigin="" href="%D0%A0%D0%B5%D0%BC%D0%BE%D0%BD%D1%82%20%D0%BA%D0%B2%D0%B0%D1%80%D1%82%D0%B8%D1%80%20%D0%BF%D0%BE%D0%B4%20%D0%BA%D0%BB%D1%8E%D1%87%20%E2%80%94%20%D0%B7%D0%B0%D0%BC%D0%B5%D1%80%20%D0%B8%20%D1%80%D0%B0%D1%81%D1%87%D1%91%D1%82%20%D1%81%D0%BC%D0%B5%D1%82%D1%8B_files/rolldown-runtime-C60lm6uB_UyGu.js"><link rel="modulepreload" as="script" crossorigin="" href="%D0%A0%D0%B5%D0%BC%D0%BE%D0%BD%D1%82%20%D0%BA%D0%B2%D0%B0%D1%80%D1%82%D0%B8%D1%80%20%D0%BF%D0%BE%D0%B4%20%D0%BA%D0%BB%D1%8E%D1%87%20%E2%80%94%20%D0%B7%D0%B0%D0%BC%D0%B5%D1%80%20%D0%B8%20%D1%80%D0%B0%D1%81%D1%87%D1%91%D1%82%20%D1%81%D0%BC%D0%B5%D1%82%D1%8B_files/framework-D_rUT4EX_UyGu.js"></head><body><a class="skip" href="#main">К содержанию</a><header class="header"><a href="#main" class="brand" aria-label="Ремонт — на главную"><span class="brand-mark"><svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-house" aria-hidden="true"><path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8"></path><path d="M3 10a2 2 0 0 1 .709-1.528l7-6a2 2 0 0 1 2.582 0l7 6A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path></svg></span><span>РЕМОНТ<span class="brand-caption">квартир под ключ</span></span></a><nav aria-label="Основная навигация" class="nav"><a href="#services">Услуги</a><a href="#approach">Подход</a><a href="#process">Этапы</a><a href="#faq">Вопросы</a></nav><a class="header-cta" href="#request">Обсудить ремонт</a><button class="menu-toggle" aria-label="Открыть меню" aria-expanded="false"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-menu" aria-hidden="true"><path d="M4 5h16"></path><path d="M4 12h16"></path><path d="M4 19h16"></path></svg></button></header><main id="main"><section class="hero wrap"><div class="hero-copy"><p class="eyebrow">РЕМОНТ КВАРТИР ПОД КЛЮЧ</p><h1>Место, куда<br>хочется<br><span>возвращаться.</span></h1><p class="hero-desc">Превратим квартиру в ваш дом.<br>От первых замеров до последнего плинтуса.</p><a class="button primary" href="#request">Рассчитать мой ремонт</a><p class="micro">Начнём с вашей задачи и подробной сметы</p><div class="hero-bottom"><span>Новостройки</span><span>Вторичное жильё</span><span>По дизайн-проекту</span></div></div><figure class="hero-visual"><img src="%D0%A0%D0%B5%D0%BC%D0%BE%D0%BD%D1%82%20%D0%BA%D0%B2%D0%B0%D1%80%D1%82%D0%B8%D1%80%20%D0%BF%D0%BE%D0%B4%20%D0%BA%D0%BB%D1%8E%D1%87%20%E2%80%94%20%D0%B7%D0%B0%D0%BC%D0%B5%D1%80%20%D0%B8%20%D1%80%D0%B0%D1%81%D1%87%D1%91%D1%82%20%D1%81%D0%BC%D0%B5%D1%82%D1%8B_files/interior_UyGu.webp" alt="Светлая кухня-гостиная с дубовыми фасадами и глубоким синим диваном" width="1536" height="1024" fetchpriority="high"><figcaption><span>Продуманное пространство.</span><strong>Новый ритм жизни.</strong></figcaption><span class="photo-note">Визуализация интерьера</span></figure></section><div class="principles wrap"><div><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-ruler" aria-hidden="true"><path d="M21.3 15.3a2.4 2.4 0 0 1 0 3.4l-2.6 2.6a2.4 2.4 0 0 1-3.4 0L2.7 8.7a2.41 2.41 0 0 1 0-3.4l2.6-2.6a2.41 2.41 0 0 1 3.4 0Z"></path><path d="m14.5 12.5 2-2"></path><path d="m11.5 9.5 2-2"></path><path d="m8.5 6.5 2-2"></path><path d="m17.5 15.5 2-2"></path></svg><span>Сначала замер.<br><strong>Затем точный расчёт.</strong></span></div><div><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-layers" aria-hidden="true"><path d="M12.83 2.18a2 2 0 0 0-1.66 0L2.6 6.08a1 1 0 0 0 0 1.83l8.58 3.91a2 2 0 0 0 1.66 0l8.58-3.9a1 1 0 0 0 0-1.83z"></path><path d="M2 12a1 1 0 0 0 .58.91l8.6 3.91a2 2 0 0 0 1.65 0l8.58-3.9A1 1 0 0 0 22 12"></path><path d="M2 17a1 1 0 0 0 .58.91l8.6 3.91a2 2 0 0 0 1.65 0l8.58-3.9A1 1 0 0 0 22 17"></path></svg><span>От черновых работ<br><strong>до чистовой отделки.</strong></span></div><div><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><path d="m9 12 2 2 4-4"></path></svg><span>Понятный состав работ.<br><strong>Понятный результат.</strong></span></div></div><section id="services" class="section wrap"><div class="section-heading"><div><p class="eyebrow">КАКОЙ РЕМОНТ ВАМ НУЖЕН</p><h2>Разные задачи.<br>Один внимательный подход.</h2></div><p>Обновить отделку или начать с чистого листа —<br class="desktop"> подберём состав работ под вашу квартиру.</p></div><div class="services"><article class="service"><div class="service-top"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-paint-roller" aria-hidden="true"><rect width="16" height="6" x="2" y="2" rx="2"></rect><path d="M10 16v-2a2 2 0 0 1 2-2h8a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2h-2"></path><rect width="4" height="6" x="8" y="16" rx="1"></rect></svg><span>Обновить пространство</span></div><h3>Косметический</h3><p>Когда хочется обновить интерьер без капитальных изменений.</p><ul><li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check" aria-hidden="true"><path d="M20 6 9 17l-5-5"></path></svg>Подготовка и покраска стен</li><li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check" aria-hidden="true"><path d="M20 6 9 17l-5-5"></path></svg>Обои и напольные покрытия</li><li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check" aria-hidden="true"><path d="M20 6 9 17l-5-5"></path></svg>Замена плинтусов и отделка</li></ul><button class="service-button">Обсудить этот ремонт<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-plus" aria-hidden="true"><path d="M5 12h14"></path><path d="M12 5v14"></path></svg></button></article><article class="service featured"><div class="service-top"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-layers" aria-hidden="true"><path d="M12.83 2.18a2 2 0 0 0-1.66 0L2.6 6.08a1 1 0 0 0 0 1.83l8.58 3.91a2 2 0 0 0 1.66 0l8.58-3.9a1 1 0 0 0 0-1.83z"></path><path d="M2 12a1 1 0 0 0 .58.91l8.6 3.91a2 2 0 0 0 1.65 0l8.58-3.9A1 1 0 0 0 22 12"></path><path d="M2 17a1 1 0 0 0 .58.91l8.6 3.91a2 2 0 0 0 1.65 0l8.58-3.9A1 1 0 0 0 22 17"></path></svg><span>Изменить всё</span></div><h3>Капитальный</h3><p>Когда квартире нужна основательная переделка — от инженерии до отделки.</p><ul><li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check" aria-hidden="true"><path d="M20 6 9 17l-5-5"></path></svg>Демонтаж и подготовка основания</li><li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check" aria-hidden="true"><path d="M20 6 9 17l-5-5"></path></svg>Электрика и сантехника</li><li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check" aria-hidden="true"><path d="M20 6 9 17l-5-5"></path></svg>Черновая и чистовая отделка</li></ul><button class="service-button">Обсудить этот ремонт<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-plus" aria-hidden="true"><path d="M5 12h14"></path><path d="M12 5v14"></path></svg></button></article><article class="service"><div class="service-top"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-ruler" aria-hidden="true"><path d="M21.3 15.3a2.4 2.4 0 0 1 0 3.4l-2.6 2.6a2.4 2.4 0 0 1-3.4 0L2.7 8.7a2.41 2.41 0 0 1 0-3.4l2.6-2.6a2.41 2.41 0 0 1 3.4 0Z"></path><path d="m14.5 12.5 2-2"></path><path d="m11.5 9.5 2-2"></path><path d="m8.5 6.5 2-2"></path><path d="m17.5 15.5 2-2"></path></svg><span>Воплотить вашу идею</span></div><h3>По дизайн-проекту</h3><p>Когда важна каждая деталь и уже есть образ будущего дома.</p><ul><li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check" aria-hidden="true"><path d="M20 6 9 17l-5-5"></path></svg>Работы по чертежам и спецификациям</li><li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check" aria-hidden="true"><path d="M20 6 9 17l-5-5"></path></svg>Сложные узлы и материалы</li><li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check" aria-hidden="true"><path d="M20 6 9 17l-5-5"></path></svg>Реализация интерьерных решений</li></ul><button class="service-button">Обсудить этот ремонт<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-plus" aria-hidden="true"><path d="M5 12h14"></path><path d="M12 5v14"></path></svg></button></article></div><p class="section-note">Стоимость и сроки определяются после осмотра и согласования состава работ.</p></section><section id="approach" class="approach"><div class="wrap approach-grid"><div><p class="eyebrow">ВСЁ НАЧИНАЕТСЯ С ЯСНОСТИ</p><h2>Хороший ремонт —<br>это не только<br><em>красивые стены.</em></h2><p class="approach-intro">Это решения, которые понятны до начала работ.<br>И детали, которые радуют каждый день.</p></div><div class="approach-points"><div><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check" aria-hidden="true"><path d="M20 6 9 17l-5-5"></path></svg><div><h3>Что будем делать</h3><p>Разбираем состояние квартиры и ваши пожелания. Определяем, что сохранить, а что изменить.</p></div></div><div><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check" aria-hidden="true"><path d="M20 6 9 17l-5-5"></path></svg><div><h3>Из чего складывается смета</h3><p>Отдельно обсуждаем работы и материалы. Уточняем объёмы, чтобы вы понимали каждую позицию.</p></div></div><div><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check" aria-hidden="true"><path d="M20 6 9 17l-5-5"></path></svg><div><h3>В какой последовательности</h3><p>Планируем этапы и технологические паузы. Обсуждаем закупки и зависимость сроков от поставок.</p></div></div></div></div></section><section id="process" class="section wrap"><div class="section-heading"><div><p class="eyebrow">ОТ ПЕРВОГО ЗВОНКА ДО НОВОСЕЛЬЯ</p><h2>По шагам.<br>Без лишней суеты.</h2></div><a class="text-link" href="#request">Начать с замера</a></div><div class="steps"><div class="step"><span class="step-number">0<!-- -->1</span><h3>Знакомство</h3><p>Расскажите о квартире, планах и пожеланиях к ремонту.</p></div><div class="step"><span class="step-number">0<!-- -->2</span><h3>Замер и смета</h3><p>Осмотрим помещения и определим состав и стоимость работ.</p></div><div class="step"><span class="step-number">0<!-- -->3</span><h3>Согласование</h3><p>Обсудим материалы, сроки, условия договора и порядок оплаты.</p></div><div class="step"><span class="step-number">0<!-- -->4</span><h3>Ремонт и приёмка</h3><p>Пройдём этапы работ и проверим результат вместе с вами.</p></div></div></section><section id="request" class="request-section"><div class="wrap request-grid"><div class="request-intro"><p class="eyebrow">ПЕРВЫЙ ШАГ К НОВОМУ ДОМУ</p><h2>Давайте начнём<br>с вашей<br><em>квартиры.</em></h2><p>Расскажите немного об объекте.<br>Этого достаточно, чтобы начать обсуждение<br class="desktop"> и договориться о замере.</p><div class="request-info"><svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-ruler" aria-hidden="true"><path d="M21.3 15.3a2.4 2.4 0 0 1 0 3.4l-2.6 2.6a2.4 2.4 0 0 1-3.4 0L2.7 8.7a2.41 2.41 0 0 1 0-3.4l2.6-2.6a2.41 2.41 0 0 1 3.4 0Z"></path><path d="m14.5 12.5 2-2"></path><path d="m11.5 9.5 2-2"></path><path d="m8.5 6.5 2-2"></path><path d="m17.5 15.5 2-2"></path></svg><span>Окончательная смета —<br>после осмотра квартиры.</span></div></div><div class="form-card"><form novalidate=""><h3>Заявка на замер и смету</h3><fieldset><legend>Какая у вас квартира?</legend><div role="radiogroup" aria-required="false" dir="ltr" data-slot="radio-group" class="grid gap-3 choices" tabindex="0" style="outline:none"><label class="choice selected"><button type="button" role="radio" aria-checked="true" data-state="checked" value="Новостройка" data-slot="radio-group-item" class="aspect-square size-4 shrink-0 rounded-full border border-input text-primary shadow-xs transition-[color,box-shadow] outline-none focus-visible:border-ring focus-visible:ring-[3px] focus-visible:ring-ring/50 disabled:cursor-not-allowed disabled:opacity-50 aria-invalid:border-destructive aria-invalid:ring-destructive/20 dark:bg-input/30 dark:aria-invalid:ring-destructive/40" id="kind-0" tabindex="-1" data-radix-collection-item=""><span data-state="checked" data-slot="radio-group-indicator" class="relative flex items-center justify-center"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle absolute top-1/2 left-1/2 size-2 -translate-x-1/2 -translate-y-1/2 fill-primary" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle></svg></span></button><input type="radio" aria-hidden="true" tabindex="-1" style="position: absolute; pointer-events: none; opacity: 0; margin: 0px; transform: translateX(-100%); width: 16px; height: 16px;" checked="checked" value="Новостройка">Новостройка</label><label class="choice"><button type="button" role="radio" aria-checked="false" data-state="unchecked" value="Вторичное жильё" data-slot="radio-group-item" class="aspect-square size-4 shrink-0 rounded-full border border-input text-primary shadow-xs transition-[color,box-shadow] outline-none focus-visible:border-ring focus-visible:ring-[3px] focus-visible:ring-ring/50 disabled:cursor-not-allowed disabled:opacity-50 aria-invalid:border-destructive aria-invalid:ring-destructive/20 dark:bg-input/30 dark:aria-invalid:ring-destructive/40" id="kind-1" tabindex="-1" data-radix-collection-item=""></button><input type="radio" aria-hidden="true" tabindex="-1" style="position: absolute; pointer-events: none; opacity: 0; margin: 0px; transform: translateX(-100%); width: 16px; height: 16px;" value="Вторичное жильё">Вторичное жильё</label><label class="choice"><button type="button" role="radio" aria-checked="false" data-state="unchecked" value="Пока не определился" data-slot="radio-group-item" class="aspect-square size-4 shrink-0 rounded-full border border-input text-primary shadow-xs transition-[color,box-shadow] outline-none focus-visible:border-ring focus-visible:ring-[3px] focus-visible:ring-ring/50 disabled:cursor-not-allowed disabled:opacity-50 aria-invalid:border-destructive aria-invalid:ring-destructive/20 dark:bg-input/30 dark:aria-invalid:ring-destructive/40" id="kind-2" tabindex="-1" data-radix-collection-item=""></button><input type="radio" aria-hidden="true" tabindex="-1" style="position: absolute; pointer-events: none; opacity: 0; margin: 0px; transform: translateX(-100%); width: 16px; height: 16px;" value="Пока не определился">Пока не определился</label></div><div class="form-row"><div><label for="area">Площадь, м²</label><input id="area" inputmode="decimal" type="number" min="10" max="500" aria-invalid="false" aria-describedby="area-error" value="60"><p class="error" id="area-error"></p></div><div class="selected-service"><span>Интересует</span><strong>Капитальный</strong><a href="#services">Изменить</a></div></div><div class="form-row"><div><label for="name">Как к вам обращаться?</label><input id="name" autocomplete="given-name" maxlength="80" placeholder="Ваше имя" aria-invalid="false" aria-describedby="name-error"><p class="error" id="name-error"></p></div><div><label for="phone">Номер телефона</label><input id="phone" type="tel" autocomplete="tel" maxlength="25" placeholder="+7 (___) ___-__-__" aria-invalid="false" aria-describedby="phone-error"><p class="error" id="phone-error"></p></div></div><div class="honey" aria-hidden="true"><label>Сайт<input tabindex="-1" autocomplete="off" name="website"></label></div><div class="consent"><button type="button" role="checkbox" aria-checked="false" data-state="unchecked" value="on" data-slot="checkbox" class="peer size-4 shrink-0 rounded-[4px] border border-input shadow-xs transition-shadow outline-none focus-visible:border-ring focus-visible:ring-[3px] focus-visible:ring-ring/50 disabled:cursor-not-allowed disabled:opacity-50 aria-invalid:border-destructive aria-invalid:ring-destructive/20 data-[state=checked]:border-primary data-[state=checked]:bg-primary data-[state=checked]:text-primary-foreground dark:bg-input/30 dark:aria-invalid:ring-destructive/40 dark:data-[state=checked]:bg-primary" id="consent" aria-invalid="false" aria-describedby="consent-error"></button><input type="checkbox" aria-hidden="true" tabindex="-1" style="position: absolute; pointer-events: none; opacity: 0; margin: 0px; transform: translateX(-100%); width: 16px; height: 16px;" value="on"><label for="consent">Разрешаю сохранить указанные данные и связаться со мной по поводу этой заявки.</label></div><p class="error" id="consent-error"></p><button class="button primary submit" type="submit" aria-busy="false">Отправить заявку на замер</button><p class="form-note">Заявка не обязывает заказывать ремонт.</p><div class="server-message" role="alert"></div></fieldset></form></div></div></section><section id="faq" class="section wrap faq-grid"><div><p class="eyebrow">ЕЩЁ ПАРА ДЕТАЛЕЙ</p><h2>Вопросы<br>до ремонта.</h2></div><div data-slot="accordion" class="faq" data-orientation="vertical"><div data-state="closed" data-orientation="vertical" data-slot="accordion-item" class="border-b last:border-b-0"><h3 data-orientation="vertical" data-state="closed" class="flex"><button type="button" aria-expanded="false" data-state="closed" data-orientation="vertical" id="radix-_R_1ndi_" data-slot="accordion-trigger" class="flex flex-1 items-start justify-between gap-4 rounded-md py-4 text-left text-sm font-medium transition-all outline-none hover:underline focus-visible:border-ring focus-visible:ring-[3px] focus-visible:ring-ring/50 disabled:pointer-events-none disabled:opacity-50 [&amp;[data-state=open]&gt;svg]:rotate-180" data-radix-collection-item="">Почему нельзя назвать точную цену за метр?<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down pointer-events-none size-4 shrink-0 translate-y-0.5 text-muted-foreground transition-transform duration-200" aria-hidden="true"><path d="m6 9 6 6 6-6"></path></svg></button></h3><div data-state="closed" id="radix-_R_9ndi_" hidden="" role="region" aria-labelledby="radix-_R_1ndi_" data-orientation="vertical" data-slot="accordion-content" class="overflow-hidden text-sm data-[state=closed]:animate-accordion-up data-[state=open]:animate-accordion-down" style="--radix-accordion-content-height: var(--radix-collapsible-content-height); --radix-accordion-content-width: var(--radix-collapsible-content-width);"></div></div><div data-state="closed" data-orientation="vertical" data-slot="accordion-item" class="border-b last:border-b-0"><h3 data-orientation="vertical" data-state="closed" class="flex"><button type="button" aria-expanded="false" data-state="closed" data-orientation="vertical" id="radix-_R_2ndi_" data-slot="accordion-trigger" class="flex flex-1 items-start justify-between gap-4 rounded-md py-4 text-left text-sm font-medium transition-all outline-none hover:underline focus-visible:border-ring focus-visible:ring-[3px] focus-visible:ring-ring/50 disabled:pointer-events-none disabled:opacity-50 [&amp;[data-state=open]&gt;svg]:rotate-180" data-radix-collection-item="">Можно обратиться без дизайн-проекта?<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down pointer-events-none size-4 shrink-0 translate-y-0.5 text-muted-foreground transition-transform duration-200" aria-hidden="true"><path d="m6 9 6 6 6-6"></path></svg></button></h3><div data-state="closed" id="radix-_R_andi_" hidden="" role="region" aria-labelledby="radix-_R_2ndi_" data-orientation="vertical" data-slot="accordion-content" class="overflow-hidden text-sm data-[state=closed]:animate-accordion-up data-[state=open]:animate-accordion-down" style="--radix-accordion-content-height: var(--radix-collapsible-content-height); --radix-accordion-content-width: var(--radix-collapsible-content-width);"></div></div><div data-state="closed" data-orientation="vertical" data-slot="accordion-item" class="border-b last:border-b-0"><h3 data-orientation="vertical" data-state="closed" class="flex"><button type="button" aria-expanded="false" data-state="closed" data-orientation="vertical" id="radix-_R_3ndi_" data-slot="accordion-trigger" class="flex flex-1 items-start justify-between gap-4 rounded-md py-4 text-left text-sm font-medium transition-all outline-none hover:underline focus-visible:border-ring focus-visible:ring-[3px] focus-visible:ring-ring/50 disabled:pointer-events-none disabled:opacity-50 [&amp;[data-state=open]&gt;svg]:rotate-180" data-radix-collection-item="">Что нужно подготовить к замеру?<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down pointer-events-none size-4 shrink-0 translate-y-0.5 text-muted-foreground transition-transform duration-200" aria-hidden="true"><path d="m6 9 6 6 6-6"></path></svg></button></h3><div data-state="closed" id="radix-_R_bndi_" hidden="" role="region" aria-labelledby="radix-_R_3ndi_" data-orientation="vertical" data-slot="accordion-content" class="overflow-hidden text-sm data-[state=closed]:animate-accordion-up data-[state=open]:animate-accordion-down" style="--radix-accordion-content-height: var(--radix-collapsible-content-height); --radix-accordion-content-width: var(--radix-collapsible-content-width);"></div></div><div data-state="closed" data-orientation="vertical" data-slot="accordion-item" class="border-b last:border-b-0"><h3 data-orientation="vertical" data-state="closed" class="flex"><button type="button" aria-expanded="false" data-state="closed" data-orientation="vertical" id="radix-_R_4ndi_" data-slot="accordion-trigger" class="flex flex-1 items-start justify-between gap-4 rounded-md py-4 text-left text-sm font-medium transition-all outline-none hover:underline focus-visible:border-ring focus-visible:ring-[3px] focus-visible:ring-ring/50 disabled:pointer-events-none disabled:opacity-50 [&amp;[data-state=open]&gt;svg]:rotate-180" data-radix-collection-item="">От чего зависят сроки ремонта?<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down pointer-events-none size-4 shrink-0 translate-y-0.5 text-muted-foreground transition-transform duration-200" aria-hidden="true"><path d="m6 9 6 6 6-6"></path></svg></button></h3><div data-state="closed" id="radix-_R_cndi_" hidden="" role="region" aria-labelledby="radix-_R_4ndi_" data-orientation="vertical" data-slot="accordion-content" class="overflow-hidden text-sm data-[state=closed]:animate-accordion-up data-[state=open]:animate-accordion-down" style="--radix-accordion-content-height: var(--radix-collapsible-content-height); --radix-accordion-content-width: var(--radix-collapsible-content-width);"></div></div><div data-state="closed" data-orientation="vertical" data-slot="accordion-item" class="border-b last:border-b-0"><h3 data-orientation="vertical" data-state="closed" class="flex"><button type="button" aria-expanded="false" data-state="closed" data-orientation="vertical" id="radix-_R_5ndi_" data-slot="accordion-trigger" class="flex flex-1 items-start justify-between gap-4 rounded-md py-4 text-left text-sm font-medium transition-all outline-none hover:underline focus-visible:border-ring focus-visible:ring-[3px] focus-visible:ring-ring/50 disabled:pointer-events-none disabled:opacity-50 [&amp;[data-state=open]&gt;svg]:rotate-180" data-radix-collection-item="">Что происходит после заявки?<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down pointer-events-none size-4 shrink-0 translate-y-0.5 text-muted-foreground transition-transform duration-200" aria-hidden="true"><path d="m6 9 6 6 6-6"></path></svg></button></h3><div data-state="closed" id="radix-_R_dndi_" hidden="" role="region" aria-labelledby="radix-_R_5ndi_" data-orientation="vertical" data-slot="accordion-content" class="overflow-hidden text-sm data-[state=closed]:animate-accordion-up data-[state=open]:animate-accordion-down" style="--radix-accordion-content-height: var(--radix-collapsible-content-height); --radix-accordion-content-width: var(--radix-collapsible-content-width);"></div></div></div></section></main><footer class="footer wrap"><a href="#main" class="brand"><span class="brand-mark"><svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-house" aria-hidden="true"><path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8"></path><path d="M3 10a2 2 0 0 1 .709-1.528l7-6a2 2 0 0 1 2.582 0l7 6A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path></svg></span><span>РЕМОНТ<span class="brand-caption">квартир под ключ</span></span></a><p>Квартира меняется. Начинается дом.</p><a href="#request">Обсудить вашу задачу</a><span class="copyright">© <!-- -->2026</span></footer><a class="mobile-cta button primary" href="#request">Рассчитать мой ремонт</a><script type="module" src="%D0%A0%D0%B5%D0%BC%D0%BE%D0%BD%D1%82%20%D0%BA%D0%B2%D0%B0%D1%80%D1%82%D0%B8%D1%80%20%D0%BF%D0%BE%D0%B4%20%D0%BA%D0%BB%D1%8E%D1%87%20%E2%80%94%20%D0%B7%D0%B0%D0%BC%D0%B5%D1%80%20%D0%B8%20%D1%80%D0%B0%D1%81%D1%87%D1%91%D1%82%20%D1%81%D0%BC%D0%B5%D1%82%D1%8B_files/index-C1ZBt8Jk_UyGu.js" id="_R_" async=""></script><script>((self[Symbol.for("vinext.navigationRuntime")]??={bootstrap:{routeManifest:null},functions:{}}).bootstrap.rsc??={rsc:[]}).rsc.push("2:I[\"74f944bd09a9\",[],\"Children\",1]\n")</script><script>((self[Symbol.for("vinext.navigationRuntime")]??={bootstrap:{routeManifest:null},functions:{}}).bootstrap.rsc??={rsc:[]}).rsc.push("3:I[\"52529b92208a\",[],\"GlobalErrorBoundary\",1]\n")</script><script>((self[Symbol.for("vinext.navigationRuntime")]??={bootstrap:{routeManifest:null},functions:{}}).bootstrap.rsc??={rsc:[]}).rsc.push("4:I[\"18ecf746a395\",[],\"default\",1]\n")</script><script>((self[Symbol.for("vinext.navigationRuntime")]??={bootstrap:{routeManifest:null},functions:{}}).bootstrap.rsc??={rsc:[]}).rsc.push("5:I[\"52529b92208a\",[],\"ErrorBoundary\",1]\n")</script><script>((self[Symbol.for("vinext.navigationRuntime")]??={bootstrap:{routeManifest:null},functions:{}}).bootstrap.rsc??={rsc:[]}).rsc.push("6:I[\"1b73e8b5fbe4\",[],\"LayoutSegmentProvider\",1]\n")</script><script>((self[Symbol.for("vinext.navigationRuntime")]??={bootstrap:{routeManifest:null},functions:{}}).bootstrap.rsc??={rsc:[]}).rsc.push("7:I[\"74f944bd09a9\",[],\"Slot\",1]\n")</script><script>((self[Symbol.for("vinext.navigationRuntime")]??={bootstrap:{routeManifest:null},functions:{}}).bootstrap.rsc??={rsc:[]}).rsc.push("8:I[\"52529b92208a\",[],\"NotFoundBoundary\",1]\n")</script><script>((self[Symbol.for("vinext.navigationRuntime")]??={bootstrap:{routeManifest:null},functions:{}}).bootstrap.rsc??={rsc:[]}).rsc.push("9:I[\"78579b1089e4\",[],\"AppRouterScrollTarget\",1]\n")</script><script>((self[Symbol.for("vinext.navigationRuntime")]??={bootstrap:{routeManifest:null},functions:{}}).bootstrap.rsc??={rsc:[]}).rsc.push("a:I[\"52529b92208a\",[],\"RedirectBoundary\",1]\n")</script><script>((self[Symbol.for("vinext.navigationRuntime")]??={bootstrap:{routeManifest:null},functions:{}}).bootstrap.rsc??={rsc:[]}).rsc.push(":HL[\"/_next/static/css/index.DftcyDF3.css\",\"style\"     ]\n")</script><script>((self[Symbol.for("vinext.navigationRuntime")]??={bootstrap:{routeManifest:null},functions:{}}).bootstrap.rsc??={rsc:[]}).rsc.push("0:{\"page:/\":\"$L1\",\"layout:/\":[[[\"$\",\"link\",\"css:/_next/static/css/index.DftcyDF3.css\",{\"rel\":\"stylesheet\",\"precedence\":\"vite-rsc/importer-resources\",\"href\":\"/_next/static/css/index.DftcyDF3.css\",\"data-rsc-css-href\":\"/_next/static/css/index.DftcyDF3.css\"}],\"$undefined\"],[\"$\",\"html\",null,{\"lang\":\"ru\",\"children\":[\"$\",\"body\",null,{\"children\":[\"$\",\"$L2\",null,{}]}]}]],\"route:/\":[[[\"$\",\"meta\",null,{\"charSet\":\"utf-8\"}],[[\"$\",\"title\",\"0\",{\"children\":\"Ремонт квартир под ключ — замер и расчёт сметы\"}],[\"$\",\"meta\",\"1\",{\"name\":\"description\",\"content\":\"Ремонт новостроек и вторичного жилья: от черновых работ до чистовой отделки. Оставьте заявку на замер и расчёт сметы для вашей квартиры.\"}],[\"$\",\"link\",\"2\",{\"data-vinext-streamed-icon\":\"$undefined\",\"rel\":\"shortcut icon\",\"href\":\"/favicon.svg\",\"type\":\"$undefined\",\"sizes\":\"$undefined\",\"color\":\"$undefined\",\"media\":\"$undefined\",\"fetchPriority\":\"$undefined\"}],[\"$\",\"link\",\"3\",{\"data-vinext-streamed-icon\":\"$undefined\",\"rel\":\"icon\",\"href\":\"/favicon.svg\",\"type\":\"$undefined\",\"sizes\":\"$undefined\",\"color\":\"$undefined\",\"media\":\"$undefined\",\"fetchPriority\":\"$undefined\"}]],[[\"$\",\"meta\",\"0\",{\"name\":\"viewport\",\"content\":\"width=device-width, initial-scale=1\"}]]],[\"$\",\"$L3\",null,{\"fallback\":\"$4\",\"children\":[\"$\",\"$L5\",null,{\"fallback\":\"$4\",\"children\":[\"$\",\"$L6\",null,{\"providerId\":\"layout:/\",\"segmentMap\":{\"children\":[]},\"children\":[\"$\",\"$L7\",null,{\"id\":\"layout:/\",\"parallelSlots\":\"$undefined\",\"children\":[\"$\",\"$L8\",null,{\"resetKey\":\"\",\"fallback\":[[\"$\",\"title\",null,{\"children\":\"404: This page could not be found.\"}],[\"$\",\"div\",null,{\"style\":{\"fontFamily\":\"system-ui,\\\"Segoe UI\\\",Roboto,Helvetica,Arial,sans-serif,\\\"Apple Color Emoji\\\",\\\"Segoe UI Emoji\\\"\",\"height\":\"100vh\",\"textAlign\":\"center\",\"display\":\"flex\",\"flexDirection\":\"column\",\"alignItems\":\"center\",\"justifyContent\":\"center\"},\"children\":[\"$\",\"div\",null,{\"children\":[[\"$\",\"style\",null,{\"dangerouslySetInnerHTML\":{\"__html\":\"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}\"}}],[\"$\",\"h1\",null,{\"className\":\"next-error-h1\",\"style\":{\"display\":\"inline-block\",\"margin\":\"0 20px 0 0\",\"padding\":\"0 23px 0 0\",\"fontSize\":24,\"fontWeight\":500,\"verticalAlign\":\"top\",\"lineHeight\":\"49px\"},\"children\":404}],[\"$\",\"div\",null,{\"style\":{\"display\":\"inline-block\"},\"children\":[\"$\",\"h2\",null,{\"style\":{\"fontSize\":14,\"fontWeight\":400,\"lineHeight\":\"49px\",\"margin\":0},\"children\":\"This page could not be found.\"}]}]]}]}]],\"children\":[\"$\",\"$L9\",null,{\"children\":[\"$\",\"$La\",null,{\"children\":[[\"$\",\"$L6\",null,{\"providerId\":\"page:/\",\"segmentMap\":{\"children\":[\"__PAGE__\"]},\"children\":[\"$\",\"$L7\",null,{\"id\":\"page:/\"}]}],null]}]}]}]}]}]}]}],null,null],\"__route\":\"route:/\",\"__interceptionContext\":null,\"__layoutIds\":[\"layout:/\"],\"__rootLayout\":\"/\",\"__bfcacheSegmentIdentities\":{\"layout:/\":\"[\\\"layout\\\",\\\"layout:/\\\",\\\"root-boundary:/\\\",\\\"\\\"]\",\"page:/\":\"[\\\"page\\\",\\\"page:/\\\",\\\"root-boundary:/\\\",\\\"\\\"]\"},\"__srcPage\":[\"page\"],\"__layoutFlags\":{\"layout:/\":\"s\"},\"__artifactCompatibility\":{\"schemaVersion\":1,\"graphVersion\":\"app-route-graph:1177fd80f83fa7b0\",\"deploymentVersion\":\"7bc70524-1084-4e19-b38f-cc11535624a7\",\"appElementsSchemaVersion\":1,\"rscPayloadSchemaVersion\":1,\"rootBoundaryId\":\"/\",\"renderEpoch\":null},\"__dynamicStaleTime\":0}\n")</script><script>((self[Symbol.for("vinext.navigationRuntime")]??={bootstrap:{routeManifest:null},functions:{}}).bootstrap.rsc??={rsc:[]}).rsc.push("b:I[\"6efdf509a785\",[],\"default\",1]\n")</script><script>((self[Symbol.for("vinext.navigationRuntime")]??={bootstrap:{routeManifest:null},functions:{}}).bootstrap.rsc??={rsc:[]}).rsc.push("1:[\"$\",\"$Lb\",null,{\"params\":\"$@c\",\"searchParams\":\"$@d\"}]\n")</script><script>((self[Symbol.for("vinext.navigationRuntime")]??={bootstrap:{routeManifest:null},functions:{}}).bootstrap.rsc??={rsc:[]}).rsc.push("c:{}\n")</script><script>((self[Symbol.for("vinext.navigationRuntime")]??={bootstrap:{routeManifest:null},functions:{}}).bootstrap.rsc??={rsc:[]}).rsc.push("d:{}\n")</script><script>Object.assign(((self[Symbol.for("vinext.navigationRuntime")]??={bootstrap:{routeManifest:null},functions:{}}).bootstrap.rsc??={rsc:[]}),{"initialCacheKind":"dynamic","dynamicStaleTimeSeconds":0});((self[Symbol.for("vinext.navigationRuntime")]??={bootstrap:{routeManifest:null},functions:{}}).bootstrap.rsc??={rsc:[]}).done=true</script><script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a46c4034c90c0925',t:'MTc5MTM2OTIzOQ=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script><iframe height="1" width="1" style="position: absolute; top: 0px; left: 0px; border: medium; visibility: hidden;"></iframe></body></html>
